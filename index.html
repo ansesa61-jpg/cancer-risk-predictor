@@ -1,0 +1,30 @@
+<form action="/predict" method="post">
+
+Age: <input name="Age"><br>
+Gender: <input name="Gender"><br>
+Smoking: <input name="Smoking"><br>
+Alcohol_Use: <input name="Alcohol_Use"><br>
+Obesity: <input name="Obesity"><br>
+Family_History: <input name="Family_History"><br>
+Diet_Red_Meat: <input name="Diet_Red_Meat"><br>
+Diet_Salted_Processed: <input name="Diet_Salted_Processed"><br>
+Fruit_Veg_Intake: <input name="Fruit_Veg_Intake"><br>
+Physical_Activity: <input name="Physical_Activity"><br>
+Air_Pollution: <input name="Air_Pollution"><br>
+Occupational_Hazards: <input name="Occupational_Hazards"><br>
+BRCA_Mutation: <input name="BRCA_Mutation"><br>
+H_Pylori_Infection: <input name="H_Pylori_Infection"><br>
+Calcium_Intake: <input name="Calcium_Intake"><br>
+BMI: <input name="BMI"><br>
+Physical_Activity_Level: <input name="Physical_Activity_Level"><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+<hr>
+
+{% if risk %}
+Risk Level: {{ risk }}<br>
+Cancer Type: {{ cancer }}
+{% endif %}
